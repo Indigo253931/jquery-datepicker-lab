@@ -11,7 +11,7 @@ $("#todayDate").html(m_names[curr_month] + ". " + curr_date + ", " + curr_year);
 // 5. For this project, we are using the jQuery's .datepicker(), which is actually part of the jQuery UI library.
 // You can read more about the jQuery UI datepicker here: https://jqueryui.com/datepicker/
 // Use jQuery to grab the element with an id of "datepicker" and call .datepicker() on it:
-
+var datePicker = $("#datepicker").datepicker();
 // _____
 
 
