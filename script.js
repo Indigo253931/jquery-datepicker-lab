@@ -37,4 +37,4 @@ var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sept", "
 // 4. Now we have everything we need to create our HTML string. Use jQuery's .html() method.
 
 // $("#todayDate").html(____);
-$("#todayDate").html(date =" " + months[month] + " " + year);
+$("#todayDate").html(date + " " + months[month] + " " + year);
