@@ -17,8 +17,9 @@ function daysLeft() {
 // 13. You are almost there!
 // We need a variable where we can store the integer value difference of days and display that in a concatenated HTML string.
 // "You have ____ days left!"
-
+var intVal =  ("You have " + intVal + "days left!");
 }
+
 
 $("#datepicker").on("change", function(){
 	daysLeft();
@@ -27,7 +28,9 @@ $("#datepicker").on("change", function(){
 // Use jQuery to write the result string in the element with an id of 'result'
 
 // _____
+$("#result").click(intVal, function(){
 
+});
 });
 
 // UH-OH! We defined the variable inside daysLeft and we need the same data in our .on('change', function(){})
