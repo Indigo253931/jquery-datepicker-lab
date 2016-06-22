@@ -33,14 +33,16 @@ $("#datepicker").on("change", function(a){
 var b = $("#getTime").on(today);
 // 10. Now we need a variable to store the difference in days between today and the end date selected by the user.
 // Basically, we need to subtract b from a
-
+var d = 
 
 // 11. SPOILER ALERT!  If you've done it correctly, you will get a difference in milliseconds, which is not what we want.
 // ...so we need one more variable to store a constant and we need to define it before we store the difference in days.
 // That makes difference in days our FOURTH variable, so let's call our THIRD variable c. 
 // c = hours per day * minutes per hour * seconds per minute * ms per sec
 // Do the math and store the value.
+var c = hours per day * minutes per hour * second per minute * ms per sec
 
+console.log();
 // If all is well, you can console.log your difference in days variable and it will change depending on what date is clicked on the datepicker.
 
 // 12. There is still a problem. We need the result to be an integer.
