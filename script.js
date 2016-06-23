@@ -17,6 +17,7 @@ function daysLeft() {
 	// var d = _____
 
 	// we will remove this later:
+		console.log(a);
 	return a;
 }
 
@@ -31,7 +32,7 @@ $("#datepicker").on("change", function(a){
 // 9. For the second variable `b`, today's time, you need to call getTime on your today variable
 
 var b = $("#getTime").on(today);
-
+console.log(b);
 // 10. Now we need a variable to store the difference in days between today and the end date selected by the user.
 // Basically, we need to subtract b from a
 var diffDays = Date.now();
@@ -41,8 +42,8 @@ var diffDays = Date.now();
 // That makes difference in days our FOURTH variable, so let's call our THIRD variable c. 
 // c = hours per day * minutes per hour * seconds per minute * ms per sec
 // Do the math and store the value.
-var c = c.getMinutes() * c.getSeconds() * c.getHours();
-console.log(d);
+var c = $(Math.abs(diffDays));
+console.log(diffDays);
 
 // If all is well, you can console.log your difference in days variable and it will change depending on what date is clicked on the datepicker.
 
