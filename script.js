@@ -9,33 +9,49 @@ $("#todayDate").html(m_names[curr_month] + ". " + curr_date + ", " + curr_year);
 $("#datepicker").datepicker();
 
 function daysLeft() {
-	var a = $( "#datepicker" ).datepicker('getDate').getTime();
+	var a = $( "#datepicker").datepicker('getDate').getTime();
 	// solutions for 9, 10, 11 and 12 go here:
-
+//var b = $("#getTime").on(today);
+var b = today.getTime();
+//console.log(a);
+//console.log(b);
+console.log(today.getTime());
 	// var b = _____
 	// var c = _____
 	// var d = _____
 
 	// we will remove this later:
-		console.log(a);
-	return a;
+console.log(b);
+	//return a;
+
+var c = (a - b);
+
+console.log(c);
+
+
+var d = (c /( 24 * 60 * 60 * 1000));
+	var e = Math.round(d);
+	console.log(e);
+//var d = ();
 }
+
 
 
 $("#datepicker").on("change", function(a){
 	daysLeft();
 	console.log(a);
+
 });
 
 
 
 // 9. For the second variable `b`, today's time, you need to call getTime on your today variable
 
-var b = $("#getTime").on(today);
-console.log(b);
+
 // 10. Now we need a variable to store the difference in days between today and the end date selected by the user.
 // Basically, we need to subtract b from a
-var diffDays = Date.now();
+//var diffDays = Date.now();
+
 
 // 11. SPOILER ALERT!  If you've done it correctly, you will get a difference in milliseconds, which is not what we want.
 // ...so we need one more variable to store a constant and we need to define it before we store the difference in days.
